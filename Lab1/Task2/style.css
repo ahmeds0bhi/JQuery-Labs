@@ -1,0 +1,26 @@
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    width: 30%;
+    margin-right: 25px;
+    margin-top: 2%;
+}
+.image-container .image{
+    width: 100%;
+    cursor: pointer;
+    border: 5px solid salmon;
+    border-radius: 50px;
+}
+
+.image-container p{
+    display: none;
+    background-color: salmon;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,38 @@
+
+.image-container {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 800PX;
+}
+
+.image-container .active{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border: 5px solid salmon;
+    border-radius: 25px;
+    box-shadow: 5px 3px  8px gray ;
+    cursor: pointer;
+}
+
+.image-container .btn{
+    margin-top: 54%;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    background-color: rgb(205, 72, 57);
+    color: white;
+    border: rgb(93, 0, 0) 3px solid;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.image-container .btn:hover {
+    background-color: rgb(220, 103, 31);
+    color: rgb(0, 0, 0);
+  }
+

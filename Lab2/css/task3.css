@@ -1,0 +1,82 @@
+main {
+  text-align: center;
+}
+.container {
+  width: 35%;
+  margin: auto;
+}
+
+input {
+  border: 2px solid rgb(173, 173, 173);
+  width: 80%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  outline: none;
+}
+input:focus {
+  border: 2px solid rgb(151, 151, 232);
+}
+#addTask {
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-Color 0.3s;
+  cursor: pointer;
+}
+#addTask:hover {
+  background-color: rgb(151, 151, 232);
+}
+#errorContainer {
+  margin-top: 10px;
+}
+#errorMessage {
+  background-color: red;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  width: 35%;
+  margin: auto;
+  padding: 0px;
+  background-color: rgba(245, 245, 245, 0.575);
+  margin-top: 20px;
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+.task-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.completed {
+  background-color: lightgreen;
+}
+button {
+  margin: 0px 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-Color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.done:hover {
+  background-color: rgb(24, 223, 47);
+}
+.remove:hover {
+  background-color: rgb(204, 47, 60);
+}
+li {
+  position: relative;
+  margin: 10px 0px;
+}
+li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(218, 218, 218);
+  bottom: -8%;
+  left: 1px;
+  position: absolute;
+}
+.task-text {
+  margin-left: 10px;
+}

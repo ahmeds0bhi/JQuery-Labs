@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Droppable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <style>
+  #draggable { width: 100px; height: 150px; padding: 0.5em; float: right; margin: 500px 10px 10px 0;
+    background-color: yellow;text-align: center;display: block; }
+
+  #droppable { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px;
+    border-radius:50%;background-color: black; }
+
+.blackHole {color: white ; display: inline-block;margin-left: 120px;font-size: 20px;}
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <script>
+    $(function(){
+        $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({drop:function(event,ui){
+        $(this)
+        // .hide("draggabl")
+        $("#draggable").css("display", "none");
+    }
+    })
+    })
+  </script>
+
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content" >
+    <img src="images/5.jpg" width="100%">
+  <p style="margin-top: 50px;">Drag me </p>
+</div>
+ 
+<div id="droppable" class="ui-widget-header">
+  <p class="blackHole">Black hole</p>
+</div>
+ 
+ 
+</body>
+</html>
